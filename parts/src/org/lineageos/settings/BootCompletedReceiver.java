@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.util.Log;
 
+import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.utils.FileUtils;
 import android.content.SharedPreferences;
@@ -40,6 +41,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        try {
+            DiracUtils.getInstance(context);
+        } catch (Exception e) {
+            Log.d(TAG, "Dirac is not present in system");
+        }
+
         RefreshUtils.initialize(context);
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
