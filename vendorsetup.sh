@@ -15,7 +15,7 @@ git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm62
 
 # Bengal HALs
 git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_display hardware/qcom-caf/bengal/display 
-git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_audio hardware/qcom-caf/bengal/audio 
+#git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_audio hardware/qcom-caf/bengal/audio 
 git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_gps hardware/qcom-caf/bengal/gps
 git clone https://github.com/PixelExperience-Staging/hardware_qcom-caf_bengal_media hardware/qcom-caf/bengal/media
 
